@@ -27,19 +27,16 @@
             text-align: center;
             background-color: #333;
             margin: 0;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
         }
         nav ul li {
-            margin: 0.5em;
+            display: inline-block;
+            margin-right: 1em;
         }
         nav ul li a {
             color: white;
             text-decoration: none;
             padding: 0.5em 1em;
             display: inline-block;
-            border-radius: 4px;
         }
         nav ul li a:hover {
             background-color: #ddd;
@@ -50,7 +47,6 @@
             width: 80%;
             margin: auto;
             flex: 1;
-            padding: 1em;
         }
         section {
             padding: 2em;
@@ -75,7 +71,6 @@
             padding: 20px;
             border-radius: 8px;
             text-align: center;
-            transition: background-color 0.3s;
         }
         .home-item:hover, .service-item:hover {
             background-color: #b2ebf2;
@@ -108,7 +103,6 @@
             border-radius: 4px;
             border: 1px solid #ddd;
             margin-bottom: 1em;
-            width: 100%;
         }
         form button {
             padding: 0.7em;
@@ -128,6 +122,26 @@
             text-align: center;
             padding: 1em 0;
             margin-top: auto;
+            width: 100%;
+            position: relative;
+            left: 0;
+            right: 0;
+        }
+        @media (max-width: 768px) {
+            .container {
+                width: 100%;
+                padding: 0 1em;
+            }
+            nav ul li {
+                display: block;
+                margin: 0.5em 0;
+            }
+        }
+        .section-content {
+            display: none;
+        }
+        .section-content.active {
+            display: block;
         }
         .contact-icon {
             position: fixed;
@@ -141,21 +155,6 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             font-size: 20px;
             z-index: 1001;
-        }
-        @media (max-width: 768px) {
-            nav ul li {
-                margin: 0.2em;
-            }
-            .container {
-                width: 100%;
-                padding: 0 1em;
-            }
-        }
-        .section-content {
-            display: none;
-        }
-        .section-content.active {
-            display: block;
         }
     </style>
 </head>
