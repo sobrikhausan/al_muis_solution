@@ -1,359 +1,648 @@
 <!DOCTYPE html>
-<html lang="en">
+<html  >
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Al Muis Solution</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            background-color: #f4f4f4;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-        header {
-            background-color: #3c920e;
-            color: white;
-            text-align: center;
-            padding: 1.5em 0;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            text-align: center;
-            background-color: #333;
-            margin: 0;
-        }
-        nav ul li {
-            display: inline-block;
-            margin-right: 1em;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            padding: 0.5em 1em;
-            display: inline-block;
-        }
-        nav ul li a:hover {
-            background-color: #ddd;
-            color: black;
-            transition: background-color 0.3s;
-        }
-        .container {
-            width: 100%;
-            margin: auto;
-            flex: 1;
-        }
-        section {
-            padding: 2em;
-            background-color: white;
-            margin-bottom: 1em;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        section h2 {
-            border-bottom: 2px solid #4CAF50;
-            padding-bottom: 0.5em;
-            margin-bottom: 1em;
-            color: #4CAF50;
-        }
-        .home-grid, .service-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            grid-gap: 20px;
-        }
-        .home-item, .service-item {
-            background-color: #e0f7fa;
-            padding: 20px;
-            border-radius: 8px;
-            text-align: center;
-        }
-        .home-item:hover, .service-item:hover {
-            background-color: #b2ebf2;
-        }
-        .btn {
-            display: inline-block;
-            padding: 0.5em 1em;
-            color: white;
-            background-color: #4CAF50;
-            border: none;
-            border-radius: 4px;
-            text-decoration: none;
-            text-align: center;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-        .btn:hover {
-            background-color: #45a049;
-        }
-        form {
-            display: flex;
-            flex-direction: column;
-        }
-        form label {
-            margin-bottom: 0.5em;
-            font-weight: bold;
-        }
-        form input, form textarea {
-            padding: 0.5em;
-            border-radius: 4px;
-            border: 1px solid #ddd;
-            margin-bottom: 1em;
-        }
-        form button {
-            padding: 0.7em;
-            color: white;
-            background-color: #4CAF50;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-        form button:hover {
-            background-color: #45a049;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1em 0;
-            margin-top: auto;
-            width: 100%;
-            position: relative;
-            left: 0;
-            right: 0;
-        }
-        @media (max-width: 100%) {
-            .container {
-                width: 100%;
-                padding: 0 1em;
-            }
-            nav ul li {
-                display: block;
-                margin: 0.5em 0;
-            }
-        }
-        .section-content {
-            display: none;
-        }
-        .section-content.active {
-            display: block;
-        }
-        .contact-icon {
-            position: fixed;
-            bottom: 70px;
-            right: 20px;
-            background-color: #4CAF50;
-            color: white;
-            border-radius: 50%;
-            padding: 15px;
-            cursor: pointer;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            font-size: 20px;
-            z-index: 1001;
-        }
-    </style>
+  <!-- Site made with Mobirise Website Builder v5.9.18, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v5.9.18, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/gray-and-black-simple-studio-logo-354x97.png" type="image/x-icon">
+  <meta name="description" content="">
+  
+  
+  <title>Home</title>
+  <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/animatecss/animate.css">
+  <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/socicon/css/styles.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=0vgH7x"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=0vgH7x" type="text/css">
+
+  
+  
+  
 </head>
 <body>
-    <header>
-        <h1>Al Muis Solution</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#home" onclick="showSection('home')">Home</a></li>
-            <li><a href="#about" onclick="showSection('about')">About</a></li>
-            <li><a href="#mentoring" onclick="showSection('mentoring')">Program Mentoring</a></li>
-            <li><a href="#konsultasi" onclick="showSection('konsultasi')">Konsultasi Elektro</a></li>
-            <li><a href="#gambar" onclick="showSection('gambar')">Gambar Teknik</a></li>
-            <li><a href="#simulasi" onclick="showSection('simulasi')">Simulasi</a></li>
-            <li><a href="#kontak" onclick="showSection('kontak')">Kontak</a></li>
-        </ul>
-    </nav>
+  
+  <section data-bs-version="5.1" class="menu menu2 cid-tJS6tZXiPa" once="menu" id="menu02-0">
+	
+
+	<nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+		<div class="container">
+			<div class="navbar-brand">
+				<span class="navbar-logo">
+					<a href="https://mobirise.com">
+						<img src="assets/images/gray-and-black-simple-studio-logo-354x97.png" alt="Mobirise Website Builder" style="height: 3rem;">
+					</a>
+				</span>
+				
+			</div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<div class="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="index.html#features037-1i">Home</a></li><li class="nav-item">
+						<a class="nav-link link text-black text-primary display-4" href="index.html#article02-1l">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link link text-black text-primary display-4" href="index.html#features026-1o" aria-expanded="false">Program Mentoring</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link link text-black text-primary display-4" href="index.html#numbers01-1w">Konsultasi Elektro</a>
+					</li><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="index.html#people01-1y">Gambar Teknik</a></li><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="index.html#features026-1r">Simulasi</a></li><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="index.html#contacts02-1s">Kontak</a></li></ul>
+				
+				<div class="navbar-buttons mbr-section-btn"><a class="btn btn-primary display-4" href="index.html#features037-1i">start now</a></div>
+			</div>
+		</div>
+	</nav>
+</section>
+
+<section data-bs-version="5.1" class="features037 cid-ukVenUnoCT" id="features037-1i">
+	
+	
+	
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-4">
+				<div class="col-12 col-md-12">
+					<h5 class="mbr-section-title mbr-fonts-style mt-0 mb-4 display-4"><strong>Selamat Datang di Al Muis Solution</strong><div><strong>Your Trusted Partner in Electrical Engineering</strong></div></h5>
+					<h6 class="mbr-section-subtitle mbr-fonts-style mt-0 mb-4 display-4">Al Muis Solution adalah penyedia layanan yang berfokus pada program mentoring, konsultasi, gambar teknik, dan simulasi software di bidang elektro. Kami hadir untuk membantu Anda mengembangkan keterampilan dan pengetahuan dalam dunia teknik elektro, mulai dari proyek akademis hingga profesional.<div><br></div><div>Apapun kebutuhan Anda—baik itu konsultasi untuk tugas akhir, mentoring untuk pemahaman konsep teknik, atau simulasi sistem dengan software elektro—Al Muis Solution siap memberikan solusi terbaik dengan pendekatan yang ramah, profesional, dan disesuaikan dengan kebutuhan Anda.</div><div><br></div><div>Jadikan Al Muis Solution sebagai partner terpercaya Anda dalam mencapai kesuksesan di dunia teknik elektro!</div></h6>
+					<div class="mbr-section-btn item-footer mt-3 main-button"><a href="index.html#features037-1i" class="btn item-btn btn-primary display-7">Learn More</a></div>
+				</div>
+			</div>
+
+			<div class="col-lg-8 side-features">
+				<div class="item features-without-image col-12 col-md-12 col-lg-6 item-mb active">
+					<div class="item-wrapper">
+						<div class="item-content align-left">
+							
+							<h5 class="card-title mbr-fonts-style display-5"><strong>Program Mentoring</strong></h5>
+							<p class="card-text mbr-fonts-style display-7">
+								Program mentoring intensif untuk membantu mahasiswa teknik elektro dalam perkuliahan dan skripsi, serta mendukung siswa SMA yang ingin mendalami materi.</p>
+							<div class="mbr-section-btn item-footer"><a href="index.html#features026-1o" class="btn item-btn btn-primary display-7">Learn more</a></div>
+						</div>
+
+					</div>
+				</div>
+				<div class="item features-without-image col-12 col-md-12 col-lg-6 item-mb">
+					<div class="item-wrapper">
+						<div class="item-content align-left">
+							
+							<h5 class="card-title mbr-fonts-style display-5"><strong>Konsultasi Elektro</strong></h5>
+							<p class="card-text mbr-fonts-style display-7">
+								Menyediakan solusi inovatif dan efektif untuk berbagai masalah teknis dengan pendekatan yang sistematis.</p>
+							<div class="mbr-section-btn item-footer"><a href="index.html#numbers01-1w" class="btn item-btn btn-primary display-7">Learn more</a></div>
+						</div>
+
+					</div>
+				</div>
+				<div class="item features-without-image col-12 col-md-12 col-lg-6 item-mb">
+					<div class="item-wrapper">
+						<div class="item-content align-left">
+							
+							<h5 class="card-title mbr-fonts-style display-5"><strong>Gambar Teknik</strong></h5>
+							<p class="card-text mbr-fonts-style display-7">
+							Layanan pembuatan gambar teknik yang menjamin akurasi tinggi dan kualitas profesional, siap mendukung berbagai proyek Anda.</p>
+
+							<div class="mbr-section-btn item-footer"><a href="index.html#people01-1y" class="btn item-btn btn-primary display-7">Learn more</a></div>
+						</div>
+
+					</div>
+				</div>
+				<div class="item features-without-image col-12 col-md-12 col-lg-6 item-mb">
+					<div class="item-wrapper">
+						<div class="item-content align-left">
+							
+							<h5 class="card-title mbr-fonts-style display-5"><strong>Simulasi</strong></h5>
+							<p class="card-text mbr-fonts-style display-7">
+								Analisis dan perancangan sistem elektro yang efektif menggunakan software terkini (AutoCAD, ETAP, Proteus, PVSyst, Helioscope, dll) memastikan keandalan dan optimalisasi performa.</p>
+
+							<div class="mbr-section-btn item-footer"><a href="index.html#features026-1r" class="btn item-btn btn-primary display-7">Learn more</a></div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+<section data-bs-version="5.1" class="start article2 cid-ukVNL5jlKi" id="article02-1l">
+	
+
+	
+	
+
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-12 col-md-12 col-lg-6 image-wrapper">
+				<img class="w-100" src="assets/images/mbr-1256x809.jpg" alt="Mobirise Website Builder">
+			</div>
+			<div class="col-12 col-md-12 col-lg">
+				<div class="text-wrapper align-left">
+					<h1 class="mbr-section-title mbr-fonts-style mb-4 display-5"><strong>About Al Muis Solution</strong><div><strong>Your Electrical Engineering Partner</strong></div></h1>
+					<p class="mbr-text align-left mbr-fonts-style mb-4 display-7">Al Muis Solution didirikan dengan visi untuk menjadi mitra terpercaya dalam dunia teknik elektro. Kami menyediakan layanan yang mencakup mentoring, konsultasi, pembuatan gambar teknik, dan simulasi sistem elektro. Dengan berfokus pada kualitas, inovasi, dan solusi yang tepat sasaran, kami membantu klien kami—mulai dari pelajar hingga profesional—untuk mencapai tujuan mereka.<br><br>Kami percaya bahwa setiap proyek memiliki tantangan unik, dan kami berkomitmen untuk memberikan solusi yang sesuai dengan kebutuhan spesifik setiap klien. Dengan pengalaman yang luas dan pendekatan yang personal, Al Muis Solution siap membantu Anda meraih kesuksesan dalam setiap aspek teknik elektro.<br><br>Di Al Muis Solution, kami tidak hanya memberikan layanan, tetapi juga membangun hubungan jangka panjang dengan klien kami, berdasarkan kepercayaan dan hasil yang nyata.</p>
+					<div class="mbr-section-btn align-left mt-3"><a class="btn btn-primary display-7" href="index.html#features026-1o">Get started</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section data-bs-version="5.1" class="features026 cid-ukVQsQFc2S" id="features026-1o">
+	
+
+	
+	
+	<div class="container">
+		<div class="row mb-5 justify-content-center">
+			<div class="col-12 mb-0 content-head">
+				<h3 class="mbr-section-title mbr-fonts-style align-center display-2">
+					<strong>Program Mentoring</strong></h3>
+				
+			</div>
+		</div>
+		<div class="row">
+			<div class="item features-without-image col-12 col-md-6 col-lg-6 item-mb">
+				<div class="item-wrapper">
+					<div class="card-box align-left">
+						
+						<h5 class="card-title mbr-fonts-style display-5"><strong>Mentoring Individual</strong></h5>
+						<p class="price mbr-fonts-style display-7"></p>
+						<p class="card-text mbr-fonts-style display-7">
+							Program mentoring individual yang disesuaikan dengan kebutuhan dan tujuan Anda.
+						</p>
+						<div class="mbr-section-btn mt-auto"><a class="btn btn-lg btn-primary display-7" href="https://wa.me/6285156901268">Learn More</a></div>
+					</div>
+				</div>
+			</div>
+			<div class="item features-without-image col-12 col-md-6 col-lg-6 item-mb">
+				<div class="item-wrapper">
+					<div class="card-box align-left">
+						
+						<h5 class="card-title mbr-fonts-style display-5">
+							<strong>Mentoring Kelompok</strong></h5>
+						<p class="price mbr-fonts-style display-7"></p>
+						<p class="card-text mbr-fonts-style display-7">
+							Program mentoring dalam kelompok untuk kolaborasi dan belajar bersama.
+						</p>
+						<div class="mbr-section-btn mt-auto"><a class="btn btn-lg btn-primary display-7" href="https://wa.me/6285156901268">Learn More</a></div>
+					</div>
+				</div>
+			</div>
+			<div class="item features-without-image col-12 col-md-6 col-lg-6 item-mb">
+				<div class="item-wrapper">
+					<div class="card-box align-left">
+						
+						<h5 class="card-title mbr-fonts-style display-5"><strong>Pengembangan Keterampilan</strong></h5>
+						<p class="price mbr-fonts-style display-7"></p>
+						<p class="card-text mbr-fonts-style display-7">
+							Meningkatkan keterampilan teknis dan profesional di bidang elektro.
+						</p>
+						<div class="mbr-section-btn mt-auto"><a class="btn btn-lg btn-primary display-7" href="https://wa.me/6285156901268">Learn More</a></div>
+					</div>
+				</div>
+			</div>
+			<div class="item features-without-image col-12 col-md-6 col-lg-6 item-mb">
+				<div class="item-wrapper">
+					<div class="card-box align-left">
+						
+						<h5 class="card-title mbr-fonts-style display-5"><strong>Solusi Masalah</strong></h5>
+						<p class="price mbr-fonts-style display-7"></p>
+						<p class="card-text mbr-fonts-style display-7">
+							Membantu menyelesaikan masalah teknis yang Anda hadapi dalam studi atau pekerjaan.
+						</p>
+						<div class="mbr-section-btn mt-auto"><a class="btn btn-lg btn-primary display-7" href="https://wa.me/6285156901268">Learn More</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section data-bs-version="5.1" class="numbers01 cid-ukW2xXYl5V" id="numbers01-1w">
+	
+	
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-12 content-head">
+				<div class="mbr-section-head mb-5">
+					<h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+						<strong>Konsultasi Elektro</strong></h4>
+					
+					
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			
+			<div class="item features-without-image col-12 col-md-6 col-lg-3 active">
+				<div class="item-wrapper">
+					<div class="item-content">
+						<h5 class="mbr-card-title mbr-fonts-style mt-0 mb-3 mbr-number display-1">
+							<strong>01.</strong>
+						</h5>
+						<h4 class="card-title mbr-fonts-style display-5"><strong>Analisis Masalah Teknis</strong></h4>
+						<p class="card-text mbr-fonts-style mt-0 mb-3 display-7">
+							Kami membantu Anda menganalisis masalah teknis yang kompleks dalam bidang elektro.
+						</p>
+						<div class="mbr-section-btn item-footer"><a href="https://wa.me/6285156901268" class="btn item-btn btn-primary display-7">Learn More</a></div>
+					</div>
+
+				</div>
+			</div>
+			<div class="item features-without-image col-12 col-md-6 col-lg-3">
+				<div class="item-wrapper">
+					<div class="item-content">
+						<h5 class="mbr-card-title mbr-fonts-style mt-0 mb-3 mbr-number display-1">
+							<strong>02.</strong>
+						</h5>
+						<h4 class="card-title mbr-fonts-style display-5"><strong>Solusi Efektif</strong></h4>
+						<p class="card-text mbr-fonts-style mt-0 mb-3 display-7">
+							<br><br><br>Kami menawarkan solusi yang tepat guna untuk permasalahan teknis Anda.
+						</p>
+						<div class="mbr-section-btn item-footer"><a href="https://wa.me/6285156901268" class="btn item-btn btn-primary display-7">Learn More</a></div>
+					</div>
+				</div>
+			</div><div class="item features-without-image col-12 col-md-6 col-lg-3">
+				<div class="item-wrapper">
+					<div class="item-content">
+						<h5 class="mbr-card-title mbr-fonts-style mt-0 mb-3 mbr-number display-1">
+							<strong>03.</strong>
+						</h5>
+						<h4 class="card-title mbr-fonts-style display-5"><strong>Peningkatan Efisiensi</strong></h4>
+						<p class="card-text mbr-fonts-style mt-0 mb-3 display-7">
+							<br><br>Konsultasi untuk meningkatkan efisiensi sistem elektro yang ada.
+						</p>
+						<div class="mbr-section-btn item-footer"><a href="https://wa.me/6285156901268" class="btn item-btn btn-primary display-7">Learn More</a></div>
+					</div>
+				</div>
+			</div><div class="item features-without-image col-12 col-md-6 col-lg-3">
+				<div class="item-wrapper">
+					<div class="item-content">
+						<h5 class="mbr-card-title mbr-fonts-style mt-0 mb-3 mbr-number display-1">
+							<strong>04.</strong>
+						</h5>
+						<h4 class="card-title mbr-fonts-style display-5"><strong>Pemilihan Teknologi</strong></h4>
+						<p class="card-text mbr-fonts-style mt-0 mb-3 display-7">
+							<br><br>Kami membantu Anda memilih teknologi yang tepat untuk kebutuhan proyek Anda.
+						</p>
+						<div class="mbr-section-btn item-footer"><a href="https://wa.me/6285156901268" class="btn item-btn btn-primary display-7">Learn More</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section data-bs-version="5.1" class="people01 cid-ukW4Vq2qBh" id="people01-1y">
+  
+
+  
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 mb-5">
+        <h3 class="mbr-section-maintitle mbr-fonts-style mb-4 display-2"><strong>Gambar Teknik</strong></h3>
+        
+
+        
+      </div>
+
+      <div class="col-lg-7">
+        <div class="item features-without-image">
+          <div class="item-wrapper">
+            <div class="row align-items-center">
+              <div class="col-md-7">
+                <div class="align-left">
+                  <h3 class="mbr-section-title mbr-fonts-style mb-2 display-5"><strong>Pembuatan Gambar Teknik</strong></h3>
+                  <h4 class="mbr-section-subtitle mbr-fonts-style mb-3 display-7">Kami menyediakan layanan pembuatan gambar teknik yang presisi dan detail.</h4>
+                  
+                </div>
+              </div>
+
+              <div class="col-md-5">
+                <div class="mbr-section-btn align-right"><a class="btn btn-black display-7" href="https://wa.me/6285156901268"><strong>Learn More</strong></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item features-without-image">
+          <div class="item-wrapper">
+            <div class="row align-items-center">
+              <div class="col-md-7">
+                <div class="align-left">
+                  <h3 class="mbr-section-title mbr-fonts-style mb-2 display-5">
+                    <strong>Revisi Gambar</strong></h3>
+                  <h4 class="mbr-section-subtitle mbr-fonts-style mb-3 display-7">Kami melakukan revisi gambar teknik sesuai dengan kebutuhan proyek Anda.</h4>
+                  
+                </div>
+              </div>
+
+              <div class="col-md-5">
+                <div class="mbr-section-btn align-right"><a class="btn btn-black display-7" href="https://wa.me/6285156901268"><strong>Learn More</strong></a></div>
+              </div>
+            </div>
+          </div>
+        </div><div class="item features-without-image">
+          <div class="item-wrapper">
+            <div class="row align-items-center">
+              <div class="col-md-7">
+                <div class="align-left">
+                  <h3 class="mbr-section-title mbr-fonts-style mb-2 display-5">
+                    <strong>Gambar Design Awal</strong></h3>
+                  <h4 class="mbr-section-subtitle mbr-fonts-style mb-3 display-7">Pembuatan gambar desain awal untuk mendukung proses perancangan.</h4>
+                  
+                </div>
+              </div>
+
+              <div class="col-md-5">
+                <div class="mbr-section-btn align-right"><a class="btn btn-black display-7" href="https://wa.me/6285156901268"><strong>Learn More</strong></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item features-without-image">
+          <div class="item-wrapper">
+            <div class="row align-items-center">
+              <div class="col-md-7">
+                <div class="align-left">
+                  <h3 class="mbr-section-title mbr-fonts-style mb-2 display-5">
+                    <strong>Dokumentasi Project</strong></h3>
+                  <h4 class="mbr-section-subtitle mbr-fonts-style mb-3 display-7">Dokumentasi gambar teknik untuk keperluan proyek dan arsip.</h4>
+                  
+                </div>
+              </div>
+
+              <div class="col-md-5">
+                <div class="mbr-section-btn align-right"><a class="btn btn-black display-7" href="https://wa.me/6285156901268"><strong>Learn More</strong></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-bs-version="5.1" class="features026 cid-ukVTpMXtZ1" id="features026-1r">
+	
+
+	
+	
+	<div class="container">
+		<div class="row mb-5 justify-content-center">
+			<div class="col-12 mb-0 content-head">
+				<h3 class="mbr-section-title mbr-fonts-style align-center display-2">
+					<strong>Simulasi Software</strong></h3>
+				
+			</div>
+		</div>
+		<div class="row">
+			<div class="item features-without-image col-12 col-md-6 col-lg-6 item-mb">
+				<div class="item-wrapper">
+					<div class="card-box align-left">
+						
+						<h5 class="card-title mbr-fonts-style display-5"><strong>Simulasi Sistem Elektro</strong></h5>
+						<p class="price mbr-fonts-style display-7"></p>
+						<p class="card-text mbr-fonts-style display-7">
+							Menyediakan simulasi sistem elektro untuk analisis dan perancangan.
+						</p>
+						<div class="mbr-section-btn mt-auto"><a class="btn btn-lg btn-primary display-7" href="https://wa.me/6285156901268">Learn More</a></div>
+					</div>
+				</div>
+			</div><div class="item features-without-image col-12 col-md-6 col-lg-6 item-mb">
+				<div class="item-wrapper">
+					<div class="card-box align-left">
+						
+						<h5 class="card-title mbr-fonts-style display-5">
+							<strong>Validasi Design</strong>
+						</h5>
+						<p class="price mbr-fonts-style display-7"></p>
+						<p class="card-text mbr-fonts-style display-7">
+							Simulasi untuk memvalidasi desain sebelum implementasi.
+						</p>
+						<div class="mbr-section-btn mt-auto"><a class="btn btn-lg btn-primary display-7" href="https://wa.me/6285156901268">Learn More</a></div>
+					</div>
+				</div>
+			</div>
+			<div class="item features-without-image col-12 col-md-6 col-lg-6 item-mb">
+				<div class="item-wrapper">
+					<div class="card-box align-left">
+						
+						<h5 class="card-title mbr-fonts-style display-5">
+							<strong>Optimisasi Kinerja</strong></h5>
+						<p class="price mbr-fonts-style display-7"></p>
+						<p class="card-text mbr-fonts-style display-7">
+							Simulasi untuk mengoptimalkan kinerja sistem elektro Anda.
+						</p>
+						<div class="mbr-section-btn mt-auto"><a class="btn btn-lg btn-primary display-7" href="https://wa.me/6285156901268">Learn More</a></div>
+					</div>
+				</div>
+			</div>
+			<div class="item features-without-image col-12 col-md-6 col-lg-6 item-mb">
+				<div class="item-wrapper">
+					<div class="card-box align-left">
+						
+						<h5 class="card-title mbr-fonts-style display-5">
+							<strong>Pelatihan Simulasi</strong></h5>
+						<p class="price mbr-fonts-style display-7"></p>
+						<p class="card-text mbr-fonts-style display-7">
+							Kami juga menawarkan pelatihan simulasi untuk pengembangan keterampilan teknis Anda.
+						</p>
+						<div class="mbr-section-btn mt-auto"><a class="btn btn-lg btn-primary display-7" href="https://wa.me/6285156901268">Learn More</a></div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</section>
+
+<section data-bs-version="5.1" class="contacts02 map1 cid-ukVTMVRKc6" id="contacts02-1s">
+
+    
+
+    
     <div class="container">
-        <div id="home" class="section-content active">
-            <section>
-                <h2>Home</h2>
-                <div class="home-grid">
-                    <div class="home-item">
-                        <h3>Program Mentoring</h3>
-                        <p>Program mentoring untuk mahasiswa elektro (perkuliahan dan skripsi) dan siswa SMA</p>
-                    </div>
-                    <div class="home-item">
-                        <h3>Konsultasi Elektro</h3>
-                        <p>Pemecahan masalah teknis dan merancang solusi yang efektif</p>
-                    </div>
-                    <div class="home-item">
-                        <h3>Gambar Teknik</h3>
-                        <p>Layanan pembuatan gambar teknik yang akurat dan profesional</p>
-                    </div>
-                    <div class="home-item">
-                        <h3>Simulasi</h3>
-                        <p>Menganalisis dan merancang sistem elektro secara efektif menggunakan electrical software</p>
+        <div class="row justify-content-center">
+            <div class="col-12 content-head">
+                <div class="mbr-section-head mb-5">
+                    <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+                        <strong>Contacts</strong>
+                    </h3>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="card col-12 col-md-12 col-lg-6">
+                <div class="card-wrapper">
+                    <div class="text-wrapper">
+                        <h5 class="cardTitle mbr-fonts-style mb-2 display-5">
+                            <strong>Contact Us</strong>
+                        </h5>
+                        <ul class="list mbr-fonts-style display-7">
+                            <li class="mbr-text item-wrap"><span style="font-size: 1.4rem;">WhatsApp: Silakan klik "Learn More" untuk chat WA</span><br></li>
+                            <li class="mbr-text item-wrap">Email: sobrikhausan@gmail.com</li>
+                            <li class="mbr-text item-wrap">Address: Jakarta Timur</li>
+                            <li class="mbr-text item-wrap">Working hours: Sabtu dan Minggu ( 06.00 - 22.00)</li>
+                        </ul>
                     </div>
                 </div>
-            </section>
+            </div>
+            <div class="map-wrapper col-md-12 col-lg-6">
+                <div class="google-map"><iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6045.3003145248895!2d-73.9884657!3d40.7477229!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9ac1f1b85%3A0x7e33d1c0e7af3be4!2zMzUwIDV0aCBBdmUsIE5ldyBZb3JrLCBOWSAxMDExOCwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1689597362021!5m2!1sen!2sen" allowfullscreen=""></iframe></div>
+            </div>
         </div>
-        <div id="about" class="section-content">
-            <section>
-                <h2>Tentang Kami</h2>
-                <p>Al Muis Solution adalah penyedia layanan konsultasi teknik elektro, gambar teknik, dan simulasi. Kami berkomitmen untuk memberikan solusi teknis terbaik untuk membantu proyek Anda.</p>
-                <p>Dengan pengalaman bertahun-tahun dan tim profesional yang berdedikasi, kami siap menghadapi tantangan teknis yang Anda hadapi dan memberikan hasil yang memuaskan.</p>
-                <p><strong>Visi:</strong> Menjadi penyedia solusi teknik elektro terkemuka di Indonesia.</p>
-                <p><strong>Misi:</strong>
-                    <ul>
-                        <li>Menyediakan layanan berkualitas tinggi dengan pendekatan yang inovatif.</li>
-                        <li>Menjaga kepuasan pelanggan melalui solusi yang efektif dan efisien.</li>
-                        <li>Mengembangkan keterampilan tim melalui pelatihan berkelanjutan.</li>
-                    </ul>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="social02 cid-ukVTPtjwae" id="social02-1t">
+	
+
+	
+	
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-12 content-head">
+				<div class="mb-5">
+					<h5 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+						<strong>Follow us</strong>
+					</h5>
+					
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="item features-without-image col-12 col-md-6 col-lg-4">
+				<div class="item-wrapper">
+					<span class="mbr-iconfont m-auto socicon-instagram socicon"></span>
+					<div class="card-box">
+						<h4 class="card-title mbr-fonts-style mb-1 display-7">
+							<strong>Instagram</strong>
+						</h4>
+						<h5 class="card-text mbr-fonts-style display-7"></h5>
+					</div>
+				</div>
+			</div>
+			<div class="item features-without-image col-12 col-md-6 col-lg-4">
+				<div class="item-wrapper">
+					<span class="mbr-iconfont m-auto socicon-twitch socicon"></span>
+					<div class="card-box">
+						<h4 class="card-title mbr-fonts-style mb-1 display-7">
+							<strong>Twitch</strong>
+						</h4>
+						<h5 class="card-text mbr-fonts-style display-7"></h5>
+					</div>
+				</div>
+			</div>
+			<div class="item features-without-image col-12 col-md-6 col-lg-4">
+				<div class="item-wrapper">
+					<span class="mbr-iconfont m-auto socicon-twitter socicon"></span>
+					<div class="card-box">
+						<h4 class="card-title mbr-fonts-style mb-1 display-7">
+							<strong>Twitter</strong>
+						</h4>
+						<h5 class="card-text mbr-fonts-style display-7"></h5>
+					</div>
+				</div>
+			</div>
+			<div class="item features-without-image col-12 col-md-6 col-lg-4">
+				<div class="item-wrapper">
+					<span class="mbr-iconfont m-auto socicon-youtube socicon"></span>
+					<div class="card-box">
+						<h4 class="card-title mbr-fonts-style mb-1 display-7">
+							<strong>YouTube</strong>
+						</h4>
+						<h5 class="card-text mbr-fonts-style display-7"></h5>
+					</div>
+				</div>
+			</div>
+			<div class="item features-without-image col-12 col-md-6 col-lg-4">
+				<div class="item-wrapper">
+					<span class="mbr-iconfont m-auto socicon-tiktok socicon"></span>
+					<div class="card-box">
+						<h4 class="card-title mbr-fonts-style mb-1 display-7">
+							<strong>TikTok</strong>
+						</h4>
+						<h5 class="card-text mbr-fonts-style display-7"></h5>
+					</div>
+				</div>
+			</div><div class="item features-without-image col-12 col-md-6 col-lg-4">
+				<div class="item-wrapper">
+					<span class="mbr-iconfont m-auto socicon-tiktok socicon"></span>
+					<div class="card-box">
+						<h4 class="card-title mbr-fonts-style mb-1 display-7">
+							<strong>TikTok</strong>
+						</h4>
+						<h5 class="card-text mbr-fonts-style display-7"></h5>
+					</div>
+				</div>
+			</div>
+			<div class="item features-without-image col-12 col-md-6 col-lg-4">
+				<div class="item-wrapper">
+					<span class="mbr-iconfont m-auto socicon-facebook socicon"></span>
+					<div class="card-box">
+						<h4 class="card-title mbr-fonts-style mb-1 display-7">
+							<strong>Facebook</strong>
+						</h4>
+						<h5 class="card-text mbr-fonts-style display-7"></h5>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section data-bs-version="5.1" class="footer2 cid-ukWc8inN5Y" once="footers" id="footer02-1z">
+    
+
+    
+    
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6 center mt-2 mb-3">
+                <p class="mbr-fonts-style copyright mb-0 display-7">
+                    © Copyright 2024 Al Muis Solution - All Rights Reserved
                 </p>
-            </section>
-        </div>
-        <div id="mentoring" class="section-content">
-            <section>
-                <h2>Program Mentoring</h2>
-                <div class="service-grid">
-                    <div class="service-item">
-                        <h3>Mentoring Individual</h3>
-                        <p>Program mentoring individual yang disesuaikan dengan kebutuhan dan tujuan Anda.</p>
-                    </div>
-                    <div class="service-item">
-                        <h3>Mentoring Kelompok</h3>
-                        <p>Program mentoring dalam kelompok untuk kolaborasi dan belajar bersama.</p>
-                    </div>
-                    <div class="service-item">
-                        <h3>Pengembangan Keterampilan</h3>
-                        <p>Meningkatkan keterampilan teknis dan profesional di bidang elektro.</p>
-                    </div>
-                    <div class="service-item">
-                        <h3>Solusi Masalah</h3>
-                        <p>Membantu menyelesaikan masalah teknis yang Anda hadapi dalam studi atau pekerjaan.</p>
-                    </div>
+            </div>
+            <div class="col-12 col-lg-6 center">
+                <div class="row-links mt-2 mb-3">
+                    <ul class="row-links-soc">
+                        
+                        
+                        
+                        
+                    <li class="row-links-soc-item mbr-fonts-style display-7">
+                            <a href="#" class="text-primary">Instagram</a>
+                        </li><li class="row-links-soc-item mbr-fonts-style display-7">
+                            <a href="#" class="text-primary">TikTok</a>
+                        </li><li class="row-links-soc-item mbr-fonts-style display-7">
+                            <a href="#" class="text-primary">YouTube</a>
+                        </li><li class="row-links-soc-item mbr-fonts-style display-7">
+                            <a href="#" class="text-primary">Twitter</a>
+                        </li></ul>
                 </div>
-            </section>
-        </div>
-        <div id="konsultasi" class="section-content">
-            <section>
-                <h2>Konsultasi Elektro</h2>
-                <div class="service-grid">
-                    <div class="service-item">
-                        <h3>Analisis Masalah Teknis</h3>
-                        <p>Kami membantu Anda menganalisis masalah teknis yang kompleks dalam bidang elektro.</p>
-                    </div>
-                    <div class="service-item">
-                        <h3>Solusi Efektif</h3>
-                        <p>Kami menawarkan solusi yang tepat guna untuk permasalahan teknis Anda.</p>
-                    </div>
-                    <div class="service-item">
-                        <h3>Peningkatan Efisiensi</h3>
-                        <p>Konsultasi untuk meningkatkan efisiensi sistem elektro yang ada.</p>
-                    </div>
-                    <div class="service-item">
-                        <h3>Pemilihan Teknologi</h3>
-                        <p>Kami membantu Anda memilih teknologi yang tepat untuk kebutuhan proyek Anda.</p>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <div id="gambar" class="section-content">
-            <section>
-                <h2>Gambar Teknik</h2>
-                <div class="service-grid">
-                    <div class="service-item">
-                        <h3>Pembuatan Gambar Teknik</h3>
-                        <p>Kami menyediakan layanan pembuatan gambar teknik yang presisi dan detail.</p>
-                    </div>
-                    <div class="service-item">
-                        <h3>Revisi Gambar</h3>
-                        <p>Kami melakukan revisi gambar teknik sesuai dengan kebutuhan proyek Anda.</p>
-                    </div>
-                    <div class="service-item">
-                        <h3>Gambar Desain Awal</h3>
-                        <p>Pembuatan gambar desain awal untuk mendukung proses perancangan.</p>
-                    </div>
-                    <div class="service-item">
-                        <h3>Dokumentasi Proyek</h3>
-                        <p>Dokumentasi gambar teknik untuk keperluan proyek dan arsip.</p>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <div id="simulasi" class="section-content">
-            <section>
-                <h2>Simulasi</h2>
-                <div class="service-grid">
-                    <div class="service-item">
-                        <h3>Simulasi Sistem Elektro</h3>
-                        <p>Menyediakan simulasi sistem elektro untuk analisis dan perancangan.</p>
-                    </div>
-                    <div class="service-item">
-                        <h3>Validasi Desain</h3>
-                        <p>Simulasi untuk memvalidasi desain sebelum implementasi.</p>
-                    </div>
-                    <div class="service-item">
-                        <h3>Optimasi Kinerja</h3>
-                        <p>Simulasi untuk mengoptimalkan kinerja sistem elektro Anda.</p>
-                    </div>
-                    <div class="service-item">
-                        <h3>Pelatihan Simulasi</h3>
-                        <p>Kami juga menawarkan pelatihan simulasi untuk pengembangan keterampilan teknis Anda.</p>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <div id="kontak" class="section-content">
-            <section>
-                <h2>Kontak Kami</h2>
-                <form id="contactForm">
-                    <label for="name">Nama:</label>
-                    <input type="text" id="name" name="name" required>
-                    <label for="nomor">Nomor WA:</label>
-                    <input type="number" id="nomor" name="nomor" required>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                    <label for="message">Pesan:</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
-                    <button type="submit">Kirim</button>
-                </form>
-            </section>
+            </div>
         </div>
     </div>
-    <footer>
-        <p>&copy; 2024 Al Muis Solution. All rights reserved.</p>
-    </footer>
-    <div class="contact-icon">
-        📞
-    </div>
-    <script>
-        function showSection(sectionId) {
-            var sections = document.getElementsByClassName('section-content');
-            for (var i = 0; i < sections.length; i++) {
-                sections[i].classList.remove('active');
-            }
-            document.getElementById(sectionId).classList.add('active');
-        }
-
-        document.getElementById('contactForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-            var formData = new FormData(event.target);
-
-            fetch('https://script.google.com/macros/s/AKfycbx6gpRF4aPqQKGl2A-iCXC7rJgKPxi-oIAnpj_c4uephL9xMXgMXDZine2IX71460Zq/exec', {
-                method: 'POST',
-                body: formData
-            })
-            .then(response => response.text())
-            .then(result => {
-                alert('Pesan Anda telah dikirim!');
-                event.target.reset();
-            })
-            .catch(error => {
-                alert('Terjadi kesalahan. Silakan coba lagi.');
-                console.error('Error:', error);
-            });
-        });
-    </script>
-</body>
+</section><section class="display-7" style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;    align-content: center;display: flex;position: relative;height: 4rem;"><a href="https://mobiri.se/3364273" style="flex: 1 1;height: 4rem;position: absolute;width: 100%;z-index: 1;"><img alt="" style="height: 4rem;" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a><p style="margin: 0;text-align: center;" class="display-7">&#8204;</p><a style="z-index:1" href="https://mobirise.com/builder/ai-website-builder.html">AI Website Software</a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/theme/js/script.js"></script>  
+  
+  
+ <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
+    <input name="animation" type="hidden">
+  </body>
 </html>
